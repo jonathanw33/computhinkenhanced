@@ -1,0 +1,25 @@
+// src/components/StartButton/StartButton.scss
+
+// If you're using Bootstrap, you might want to import Bootstrap's variables
+// @import '~bootstrap/scss/_variables';
+
+$accent: #622eab; // Define your accent color if not using Bootstrap
+
+.start-button {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  background-color: $accent; // Use the accent color
+  position: sticky; // Adjust as needed
+  top: 5px;
+  right: 5px;
+  font-weight: 600;
+  border: none;
+  overflow: hidden;
+  padding: 7px 15px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($accent, 10%); // Optional hover effect
+  }
+}

@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+  10. Sidebar
+----------------------------------------------------------------*/
+.cs-sidebar_item {
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.cs-sidebar_widget_title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+.tag-cloud-link {
+  font-size: 14px;
+  line-height: 1.6em;
+  border: 2px solid #fff;
+  padding: 3px 15px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 2px;
+  &:hover {
+    color: $white;
+    background-color: $accent;
+    border-color: $accent;
+  }
+}
+
+
+.cs-author_card {
+  img {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 22px;
+  }
+  h3 {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cs-sidebar_widget_title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .cs-side_menu_widget li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .cs-sidebar_item:not(:last-child) {
+      margin-bottom: 40px;
+  }
+}
