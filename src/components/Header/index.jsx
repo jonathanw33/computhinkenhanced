@@ -77,7 +77,6 @@ export default function Header({ variant }) {
                 </Div>
               </Div>
               <Div className="cs-main_header_right">
-                {/* Render StartButton, Profile, or LogoutButton based on authentication state */}
                 {!isAuthenticated ? (
                   <StartButton />
                 ) : (

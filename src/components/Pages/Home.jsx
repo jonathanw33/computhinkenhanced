@@ -7,6 +7,8 @@ import Portfolio2 from '../Portfolio/Portfolio2';
 import Portfolio3 from '../Portfolio/Portfolio3';
 import Spacing from '../Spacing';
 import { pageTitle } from '../../helper';
+import Hero from '../Hero';
+
 
 const pages = [
   {
@@ -36,23 +38,20 @@ const pages = [
 
 ];
 
-export default function CreativePortfolioHome() {
-  pageTitle('Creative Portfolio');
+export default function Home() {
+  pageTitle('Home');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      {/* Start Hero Section */}
       <Hero3
         title="Computhink <br />Algorithm Design"
         btnLink="/maze"
         btnText={`Start Virtual Lab`}
         bgImageUrl="./images/herohome.jpeg"
       />
-      {/* End Hero Section */}
-
       <Spacing lg="150" md="80" />
       {pages.map((item, index) =>
         index % 2 === 0 ? (
@@ -83,18 +82,12 @@ export default function CreativePortfolioHome() {
       )}
 
 
-
-
-
-      {/* Start MovingText Section */}
       <Spacing lg="125" md="70" />
       <MovingText text="Start Computational Thinking" />
       <Spacing lg="105" md="70" />
-      {/* End MovingText Section */}
 
 
 
-      {/* Start CTA Section */}
       <Div className="container">
         <Cta
           title="Join our Community"
@@ -103,7 +96,6 @@ export default function CreativePortfolioHome() {
           bgSrc="/images/cta_bg_3.jpeg"
         />
       </Div>
-      {/* End CTA Section */}
     </>
   );
 }

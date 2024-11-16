@@ -8,4 +8,4 @@ const Maze = () => {
   );
 };
 
-export default Maze;  // Add this export
+export default Maze; 

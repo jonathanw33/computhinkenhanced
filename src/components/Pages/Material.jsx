@@ -5,6 +5,7 @@ import PageHeading from '../PageHeading/index.jsx';
 import Div from '../Div/index.jsx';
 import Sidebar from '../Sidebar.jsx/index.jsx';
 import Spacing from '../Spacing/index.jsx';
+import '../Post/post.scss'
 
 export default function BlogDetailsPage() {
   const params = useParams();
@@ -16,20 +17,16 @@ export default function BlogDetailsPage() {
 
   return (
     <>
-      {/* Start Page Heading Section */}
       <PageHeading 
         title='Understanding Algorithm Design'
         bgSrc='/images/blog_details_hero_bg.jpeg'
       />
-      {/* End Page Heading Section */}
 
-      {/* Start Blog Details */}
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <Div className="row">
           <Div className="col-lg-8">
 
-            {/* Start Details Post Content */}
             <Div className="cs-post cs-style2">
               <Div className="cs-post_thumb cs-radius_15">
                 <img src="/images/material1.jpeg" alt="Algorithm Design" className="w-100 cs-radius_15" />
@@ -84,19 +81,15 @@ export default function BlogDetailsPage() {
 
               </Div>
             </Div>
-            {/* End Details Post Content */}
 
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
-            {/* Start Sidebar */}
             <Spacing lg='0' md='80'/>
             <Sidebar />
-            {/* End Sidebar */}
           </Div>
         </Div>
       </Div>
       <Spacing lg='150' md='80'/>
-      {/* End Blog Details */}
     </>
   );
 }
