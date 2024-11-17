@@ -28,10 +28,10 @@ const pages = [
     category: 'Maze',
   },
   {
-    title: 'Test your knowledge about algorithm design through quiz (COMING SOON)',
+    title: 'Test your knowledge about algorithm design through quiz',
     subtitle: 'Step 03',
     btnText: 'Challenge Yourself',
-    btnLink: '/coming-soon',
+    btnLink: '/quiz',
     imageUrl: '/images/quiz.jpeg',
     category: 'Quiz',
   },
